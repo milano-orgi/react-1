@@ -228,7 +228,7 @@ section {
 }
 .box3 {
   max-width: 300px;
-  width: 100%;
+  width: 100%git;
 }
 .footer-hero p {
   font-size: 14px;
@@ -250,4 +250,51 @@ section {
   .hero-sec h1 {
     font-size: 40px;
   }
+}
+
+/* Button hover animation */
+button {
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+button:hover {
+  background: #4f8cff;
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(79, 140, 255, 0.2);
+  transform: translateY(-3px) scale(1.05);
+}
+
+a {
+  transition: color 0.3s;
+}
+a:hover {
+  color: #4f8cff;
+  text-decoration: none;
+}
+
+.box,
+.box2,
+.box3 {
+  transition: none;
+}
+.box:hover,
+.box2:hover,
+.box3:hover {
+  box-shadow: none;
+  transform: none;
+  border-color: inherit;
+}
+
+h1,
+h2,
+p {
+  transition: color 0.3s, letter-spacing 0.3s;
+}
+h1:hover,
+h2:hover {
+  color: #4f8cff;
+  letter-spacing: 1.5px;
+}
+p:hover {
+  color: #4f8cff;
 }
